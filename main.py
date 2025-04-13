@@ -2,6 +2,11 @@ from pyrogram import Client, filters
 from pyrogram.types import ChatPermissions
 from datetime import datetime, timedelta
 import random, re
+from keep_alive import keep_alive
+
+# ✅ Keep the bot alive
+keep_alive()
+
 # 🔐 Credentials
 api_id = 21257362
 api_hash = "f78ef122fe20632d49584992705f4e90"
@@ -112,3 +117,4 @@ async def vibecheck(client, message):
 
 # ✅ Launch bot
 app.run()
+
